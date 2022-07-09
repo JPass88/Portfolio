@@ -6,6 +6,7 @@ import Header from '../components/header'
 import Quote from '../components/quote'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -27,14 +28,14 @@ export default function Home() {
         <br></br>       
 
         <div className={styles.grid}>
-          <Link href="./pages/cv">
+          <Link href="/cv">
             <a className={styles.card}>
               <h2>Resume &rarr;</h2>
               <p>Click here to view my CV</p>
             </a>
           </Link> 
 
-          <Link href="./pages/projects">
+          <Link href="/projects">
             <a className={styles.card}>
               <h2>Projects &rarr;</h2>
               <p>View my assorted works.</p>
