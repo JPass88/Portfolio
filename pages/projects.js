@@ -27,7 +27,7 @@ export default function Home() {
         <br></br>       
 
         <div className={styles.grid}>
-          <a href="test.jordanpassant.ca" className={styles.card}>
+          <a href="https://test.jordanpassant.ca" className={styles.card}>
             <h2>TaskTracker &rarr;</h2>
             <p>Click here for a live demo</p>
             
