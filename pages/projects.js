@@ -7,7 +7,11 @@ import Langs from '../components/projlangs'
 
 export default function Home() {
 
-    const langs = ["HTML","CSS","React"];
+    const langs = [ 
+        { id:1, language:"HTML"},
+        { id:2, language:"CSS"},
+        { id:3, language:"React"} 
+    ];
 
   return (
     <div className={styles.container}>
@@ -22,7 +26,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1>Thanks for stoppying by!</h1>
-        <h1>Feel free to have a gander at some of my projects!</h1>      
+        <h3>Feel free to have a gander at some of my projects!</h3>      
         
         <br></br>       
 
@@ -30,7 +34,7 @@ export default function Home() {
           <a href="https://test.jordanpassant.ca" className={styles.card}>
             <h2>TaskTracker &rarr;</h2>
             <p>Click here for a live demo</p>
-            
+            <Langs langs={langs}/>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>

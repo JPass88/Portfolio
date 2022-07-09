@@ -1,12 +1,15 @@
 
-const projlangs = (langs) => {
+const projlangs = ({langs}) => {
 
   return (
-    <div>
-        
-        <p>{langs}</p>
+    <>
+    <div className="langs">
+      {
+        langs.map( (lang) => (<h5 key={lang.id}>{lang.language} </h5>))
+      }       
 
     </div>
+    </>
   )
 }
 
