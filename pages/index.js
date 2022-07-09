@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Quote from '../components/quote'
@@ -26,15 +27,19 @@ export default function Home() {
         <br></br>       
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Resume &rarr;</h2>
-            <p>Click here to view my CV</p>
-          </a>
+          <Link href="./pages/cv">
+            <a className={styles.card}>
+              <h2>Resume &rarr;</h2>
+              <p>Click here to view my CV</p>
+            </a>
+          </Link> 
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Projects &rarr;</h2>
-            <p>View my assorted works.</p>
-          </a>         
+          <Link href="./pages/projects">
+            <a className={styles.card}>
+              <h2>Projects &rarr;</h2>
+              <p>View my assorted works.</p>
+            </a>         
+          </Link>
         </div>
 
         <br></br>
